@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youssef Adouiri Alaoui — Data Scientist</title>
+  <meta name="description" content="Personal portfolio of Youssef Adouiri Alaoui — Junior Data Scientist & Industrial Management Engineer. Bridging Deep Learning, Supply Chain, and Strategy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            neutral: {
+              925: '#121212',
+              850: '#1a1a1a',
+              750: '#2a2a2a',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Smooth fade-in on scroll */
+    .fade-section {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                  transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Subtle link underline animation */
+    .link-underline {
+      position: relative;
+    }
+    .link-underline::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: currentColor;
+      transition: width 0.3s ease;
+    }
+    .link-underline:hover::after {
+      width: 100%;
+    }
+
+    /* Card hover lift */
+    .card-hover {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0a0a0a;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Image placeholder shimmer */
+    .img-placeholder {
+      background: linear-gradient(110deg, #1a1a1a 8%, #252525 18%, #1a1a1a 33%);
+      background-size: 200% 100%;
+      animation: shimmer 1.8s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
+
+    /* Dot pulse for "current status" */
+    .pulse-dot {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+  </style>
+</head>
+
+<body class="bg-neutral-925 text-neutral-300 font-sans antialiased selection:bg-white selection:text-black">
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- HERO                                        -->
+  <!-- ═══════════════════════════════════════════ -->
+  <header class="min-h-screen flex items-center justify-center px-6">
+    <div class="max-w-2xl w-full fade-section">
+      <!-- Name -->
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.1]">
+        Youssef Adouiri<br />Alaoui
+      </h1>
+
+      <!-- Title -->
+      <p class="mt-4 text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
+        Junior Data Scientist &amp; Industrial Management Engineer
+      </p>
+
+      <!-- Tagline -->
+      <p class="mt-2 text-sm text-neutral-500 italic tracking-wide">
+        Bridging Deep Learning, Supply Chain, and Strategy.
+      </p>
+
+      <!-- Links -->
+      <div class="mt-8 flex flex-wrap gap-6 text-sm text-neutral-400">
+        <a href="https://linkedin.com/in/youssef-adouiri/" target="_blank" rel="noopener" class="link-underline hover:text-white transition-colors">
+          LinkedIn ↗
+        </a>
+        <a href="https://github.com/Youssef-ADOUIRI" target="_blank" rel="noopener" class="link-underline hover:text-white transition-colors">
+          GitHub ↗
+        </a>
+        <a href="mailto:youssef.adouiri-alaoui@polytechnique.edu" class="link-underline hover:text-white transition-colors">
+          Email ↗
+        </a>
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="mt-16 text-neutral-600 text-xs tracking-widest uppercase">
+        Scroll ↓
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- UPDATES / CURRENT STATUS                    -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="max-w-2xl mx-auto fade-section">
+      <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Now</h2>
+
+      <div class="space-y-6">
+        <!-- Incoming Role -->
+        <div class="flex items-start gap-4">
+          <span class="mt-1.5 w-2 h-2 rounded-full bg-emerald-500 pulse-dot flex-shrink-0"></span>
+          <div>
+            <p class="text-white text-sm font-medium">Incoming — Data Scientist Intern</p>
+            <p class="text-neutral-500 text-sm mt-0.5">Carrefour Analytics Factory · Starting Apr 2026</p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="flex items-start gap-4">
+          <span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-600 flex-shrink-0"></span>
+          <div>
+            <p class="text-white text-sm font-medium">M2 Data Science</p>
+            <p class="text-neutral-500 text-sm mt-0.5">École Polytechnique (IP Paris)</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-600 flex-shrink-0"></span>
+          <div>
+            <p class="text-white text-sm font-medium">M.Eng Industrial Management</p>
+            <p class="text-neutral-500 text-sm mt-0.5">EMINES — Université Mohammed VI Polytechnique</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SELECTED PROJECTS                           -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="max-w-4xl mx-auto fade-section">
+      <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Selected Projects</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Card 1 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">LLM</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">Arabic Text Summarization</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            Fine-tuned Qwen2.5 on Darija corpus using LoRA / PEFT. Improved ROUGE-L scores by 12%.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Web App</span>
+            <span class="text-xs bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-full">In Dev</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">Aside App</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            A minimalist to-do web application focused on fluid UX and seamless interaction.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Full-Stack</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">Sports Management Platform</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            Django / React real-time ranking system for multi-sport disciplines.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">ML</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">P&amp;G Demand Forecasting</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            XGBoost model for 900+ SKUs, achieving 87% accuracy (+15% vs&nbsp;manual).
+          </p>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Remote Sensing</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">Satellite Water Quality</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            Neural Networks on Sentinel-2 imagery to estimate water quality in Brazil (FUNCEME).
+          </p>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Operations Research</span>
+          </div>
+          <h3 class="text-white text-base font-semibold leading-snug">Flood Risk Optimization</h3>
+          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
+            Optimal barrier placement using OR methods. BCG Case Study.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- LEADERSHIP & ACTIVITIES                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="max-w-4xl mx-auto fade-section">
+      <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Leadership &amp; Activities</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+        <!-- Activity 1 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
+          <!-- Image placeholder — Replace src with your photo -->
+          <div class="w-full aspect-[4/3] img-placeholder relative">
+            <img
+              src="https://placehold.co/600x450/1a1a1a/333333?text=NDS+Competition"
+              alt="National Data Science Competition"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">President</p>
+            <h3 class="text-white text-sm font-semibold leading-snug">National Data Science Competition</h3>
+            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
+              Secured sponsorships and designed NLP challenges including Voice Anonymization.
+            </p>
+          </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
+          <div class="w-full aspect-[4/3] img-placeholder relative">
+            <img
+              src="https://placehold.co/600x450/1a1a1a/333333?text=Volleyball"
+              alt="Volleyball Captain"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">Captain</p>
+            <h3 class="text-white text-sm font-semibold leading-snug">Volleyball Team</h3>
+            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
+              Led university team through rebuilding phase; former professional player.
+            </p>
+          </div>
+        </div>
+
+        <!-- Activity 3 -->
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
+          <div class="w-full aspect-[4/3] img-placeholder relative">
+            <img
+              src="https://placehold.co/600x450/1a1a1a/333333?text=Engineering+Games"
+              alt="Engineering Games - Head of Sport"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">Head of Sport</p>
+            <h3 class="text-white text-sm font-semibold leading-snug">Engineering Games</h3>
+            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
+              Managed logistics for 400+ participants across multiple events.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- TECHNICAL SKILLS                            -->
+  <!-- ═══════════════════════════════════════════ -->
+  <section class="px-6 py-24 md:py-32">
+    <div class="max-w-2xl mx-auto fade-section">
+      <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Skills</h2>
+
+      <div class="space-y-6 text-sm">
+        <div>
+          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">Core</p>
+          <p class="text-white font-light">Python · SQL · C/C++ · R</p>
+        </div>
+        <div class="border-t border-neutral-800"></div>
+        <div>
+          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">AI / ML</p>
+          <p class="text-white font-light">PyTorch · TensorFlow · LLMs (RAG, LangChain) · Scikit-Learn</p>
+        </div>
+        <div class="border-t border-neutral-800"></div>
+        <div>
+          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">Web &amp; Tools</p>
+          <p class="text-white font-light">React · Django · Git · Azure · Power BI · Docker</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- FOOTER                                      -->
+  <!-- ═══════════════════════════════════════════ -->
+  <footer class="px-6 py-16 border-t border-neutral-800">
+    <div class="max-w-2xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <p class="text-neutral-600 text-xs">
+        &copy; 2026 Youssef Adouiri Alaoui
+      </p>
+      <div class="flex gap-6 text-xs text-neutral-500">
+        <a href="https://linkedin.com/in/youssef-adouiri/" target="_blank" rel="noopener" class="hover:text-white transition-colors">LinkedIn</a>
+        <a href="https://github.com/Youssef-ADOUIRI" target="_blank" rel="noopener" class="hover:text-white transition-colors">GitHub</a>
+        <a href="mailto:youssef.adouiri-alaoui@polytechnique.edu" class="hover:text-white transition-colors">Email</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- SCROLL ANIMATION SCRIPT                     -->
+  <!-- ═══════════════════════════════════════════ -->
+  <script>
+    // Intersection Observer for fade-in on scroll
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+    );
+
+    document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
+  </script>
+
+</body>
+</html>
