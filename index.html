@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23121212'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,system-ui,sans-serif' font-weight='600' font-size='26' fill='white'%3EYA%3C/text%3E%3C/svg%3E" />
   <title>Youssef Adouiri Alaoui — Data Scientist</title>
   <meta name="description" content="Personal portfolio of Youssef Adouiri Alaoui — Junior Data Scientist & Industrial Management Engineer. Bridging Deep Learning, Supply Chain, and Strategy." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -112,41 +113,13 @@
   <!-- ═══════════════════════════════════════════ -->
   <header class="min-h-screen flex items-center justify-center px-6">
     <div class="max-w-2xl w-full fade-section">
-      <!-- Name -->
-      <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.1]">
-        Youssef Adouiri<br />Alaoui
-      </h1>
-
-      <!-- Title -->
-      <p class="mt-4 text-base sm:text-lg text-neutral-400 font-light leading-relaxed">
-        Junior Data Scientist &amp; Industrial Management Engineer
-      </p>
-
-      <!-- Tagline -->
-      <p class="mt-2 text-sm text-neutral-500 italic tracking-wide">
-        Bridging Deep Learning, Supply Chain, and Strategy.
-      </p>
-
-      <!-- Links -->
-      <div class="mt-8 flex flex-wrap gap-6 text-sm text-neutral-400">
-        <a href="https://linkedin.com/in/youssef-adouiri/" target="_blank" rel="noopener" class="link-underline hover:text-white transition-colors">
-          LinkedIn ↗
-        </a>
-        <a href="https://github.com/Youssef-ADOUIRI" target="_blank" rel="noopener" class="link-underline hover:text-white transition-colors">
-          GitHub ↗
-        </a>
-        <a href="mailto:youssef.adouiri-alaoui@polytechnique.edu" class="link-underline hover:text-white transition-colors">
-          Email ↗
-        </a>
-      </div>
-
-      <!-- Scroll hint -->
-      <div class="mt-16 text-neutral-600 text-xs tracking-widest uppercase">
-        Scroll ↓
-      </div>
+      <h1 id="hero-name" class="text-4xl sm:text-5xl md:text-6xl font-bold text-white tracking-tight leading-[1.1]"></h1>
+      <p id="hero-title" class="mt-4 text-base sm:text-lg text-neutral-400 font-light leading-relaxed"></p>
+      <p id="hero-tagline" class="mt-2 text-sm text-neutral-500 italic tracking-wide"></p>
+      <div id="hero-links" class="mt-8 flex flex-wrap gap-6 text-sm text-neutral-400"></div>
+      <div class="mt-16 text-neutral-600 text-xs tracking-widest uppercase">Scroll ↓</div>
     </div>
   </header>
-
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- UPDATES / CURRENT STATUS                    -->
@@ -154,37 +127,9 @@
   <section class="px-6 py-24 md:py-32">
     <div class="max-w-2xl mx-auto fade-section">
       <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Now</h2>
-
-      <div class="space-y-6">
-        <!-- Incoming Role -->
-        <div class="flex items-start gap-4">
-          <span class="mt-1.5 w-2 h-2 rounded-full bg-emerald-500 pulse-dot flex-shrink-0"></span>
-          <div>
-            <p class="text-white text-sm font-medium">Incoming — Data Scientist Intern</p>
-            <p class="text-neutral-500 text-sm mt-0.5">Carrefour Analytics Factory · Starting Apr 2026</p>
-          </div>
-        </div>
-
-        <!-- Education -->
-        <div class="flex items-start gap-4">
-          <span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-600 flex-shrink-0"></span>
-          <div>
-            <p class="text-white text-sm font-medium">M2 Data Science</p>
-            <p class="text-neutral-500 text-sm mt-0.5">École Polytechnique (IP Paris)</p>
-          </div>
-        </div>
-
-        <div class="flex items-start gap-4">
-          <span class="mt-1.5 w-2 h-2 rounded-full bg-neutral-600 flex-shrink-0"></span>
-          <div>
-            <p class="text-white text-sm font-medium">M.Eng Industrial Management</p>
-            <p class="text-neutral-500 text-sm mt-0.5">EMINES — Université Mohammed VI Polytechnique</p>
-          </div>
-        </div>
-      </div>
+      <div id="updates-list" class="space-y-6"></div>
     </div>
   </section>
-
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- SELECTED PROJECTS                           -->
@@ -192,80 +137,9 @@
   <section class="px-6 py-24 md:py-32">
     <div class="max-w-4xl mx-auto fade-section">
       <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Selected Projects</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-        <!-- Card 1 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">LLM</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">Arabic Text Summarization</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            Fine-tuned Qwen2.5 on Darija corpus using LoRA / PEFT. Improved ROUGE-L scores by 12%.
-          </p>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Web App</span>
-            <span class="text-xs bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-full">In Dev</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">Aside App</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            A minimalist to-do web application focused on fluid UX and seamless interaction.
-          </p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Full-Stack</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">Sports Management Platform</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            Django / React real-time ranking system for multi-sport disciplines.
-          </p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">ML</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">P&amp;G Demand Forecasting</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            XGBoost model for 900+ SKUs, achieving 87% accuracy (+15% vs&nbsp;manual).
-          </p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Remote Sensing</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">Satellite Water Quality</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            Neural Networks on Sentinel-2 imagery to estimate water quality in Brazil (FUNCEME).
-          </p>
-        </div>
-
-        <!-- Card 6 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">Operations Research</span>
-          </div>
-          <h3 class="text-white text-base font-semibold leading-snug">Flood Risk Optimization</h3>
-          <p class="text-neutral-500 text-sm mt-2 leading-relaxed">
-            Optimal barrier placement using OR methods. BCG Case Study.
-          </p>
-        </div>
-
-      </div>
+      <div id="projects-grid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
     </div>
   </section>
-
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- LEADERSHIP & ACTIVITIES                     -->
@@ -273,71 +147,9 @@
   <section class="px-6 py-24 md:py-32">
     <div class="max-w-4xl mx-auto fade-section">
       <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Leadership &amp; Activities</h2>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-
-        <!-- Activity 1 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
-          <!-- Image placeholder — Replace src with your photo -->
-          <div class="w-full aspect-[4/3] img-placeholder relative">
-            <img
-              src="https://placehold.co/600x450/1a1a1a/333333?text=NDS+Competition"
-              alt="National Data Science Competition"
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">President</p>
-            <h3 class="text-white text-sm font-semibold leading-snug">National Data Science Competition</h3>
-            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
-              Secured sponsorships and designed NLP challenges including Voice Anonymization.
-            </p>
-          </div>
-        </div>
-
-        <!-- Activity 2 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
-          <div class="w-full aspect-[4/3] img-placeholder relative">
-            <img
-              src="https://placehold.co/600x450/1a1a1a/333333?text=Volleyball"
-              alt="Volleyball Captain"
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">Captain</p>
-            <h3 class="text-white text-sm font-semibold leading-snug">Volleyball Team</h3>
-            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
-              Led university team through rebuilding phase; former professional player.
-            </p>
-          </div>
-        </div>
-
-        <!-- Activity 3 -->
-        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
-          <div class="w-full aspect-[4/3] img-placeholder relative">
-            <img
-              src="https://placehold.co/600x450/1a1a1a/333333?text=Engineering+Games"
-              alt="Engineering Games - Head of Sport"
-              class="w-full h-full object-cover"
-              loading="lazy"
-            />
-          </div>
-          <div class="p-5">
-            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">Head of Sport</p>
-            <h3 class="text-white text-sm font-semibold leading-snug">Engineering Games</h3>
-            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">
-              Managed logistics for 400+ participants across multiple events.
-            </p>
-          </div>
-        </div>
-
-      </div>
+      <div id="leadership-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
     </div>
   </section>
-
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- TECHNICAL SKILLS                            -->
@@ -345,61 +157,159 @@
   <section class="px-6 py-24 md:py-32">
     <div class="max-w-2xl mx-auto fade-section">
       <h2 class="text-xs tracking-[0.3em] uppercase text-neutral-500 mb-10">Skills</h2>
-
-      <div class="space-y-6 text-sm">
-        <div>
-          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">Core</p>
-          <p class="text-white font-light">Python · SQL · C/C++ · R</p>
-        </div>
-        <div class="border-t border-neutral-800"></div>
-        <div>
-          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">AI / ML</p>
-          <p class="text-white font-light">PyTorch · TensorFlow · LLMs (RAG, LangChain) · Scikit-Learn</p>
-        </div>
-        <div class="border-t border-neutral-800"></div>
-        <div>
-          <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">Web &amp; Tools</p>
-          <p class="text-white font-light">React · Django · Git · Azure · Power BI · Docker</p>
-        </div>
-      </div>
+      <div id="skills-list" class="space-y-6 text-sm"></div>
     </div>
   </section>
-
 
   <!-- ═══════════════════════════════════════════ -->
   <!-- FOOTER                                      -->
   <!-- ═══════════════════════════════════════════ -->
   <footer class="px-6 py-16 border-t border-neutral-800">
     <div class="max-w-2xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-      <p class="text-neutral-600 text-xs">
-        &copy; 2026 Youssef Adouiri Alaoui
-      </p>
-      <div class="flex gap-6 text-xs text-neutral-500">
-        <a href="https://linkedin.com/in/youssef-adouiri/" target="_blank" rel="noopener" class="hover:text-white transition-colors">LinkedIn</a>
-        <a href="https://github.com/Youssef-ADOUIRI" target="_blank" rel="noopener" class="hover:text-white transition-colors">GitHub</a>
-        <a href="mailto:youssef.adouiri-alaoui@polytechnique.edu" class="hover:text-white transition-colors">Email</a>
-      </div>
+      <p id="footer-copyright" class="text-neutral-600 text-xs"></p>
+      <div id="footer-links" class="flex gap-6 text-xs text-neutral-500"></div>
     </div>
   </footer>
 
 
   <!-- ═══════════════════════════════════════════ -->
-  <!-- SCROLL ANIMATION SCRIPT                     -->
+  <!-- DATA RENDERING ENGINE                       -->
   <!-- ═══════════════════════════════════════════ -->
   <script>
-    // Intersection Observer for fade-in on scroll
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          }
-        });
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
-    );
+    /**
+     * Escape HTML entities to prevent XSS when injecting user-provided text.
+     */
+    function esc(str) {
+      const el = document.createElement('span');
+      el.textContent = str;
+      return el.innerHTML;
+    }
 
-    document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
+    /**
+     * Fetch data.json and render every section.
+     */
+    async function renderSite() {
+      let data;
+      try {
+        const res = await fetch('./data.json');
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        data = await res.json();
+      } catch (err) {
+        document.body.innerHTML = `
+          <div class="min-h-screen flex items-center justify-center text-neutral-500 px-6 text-center">
+            <p>Could not load <code>data.json</code>.<br/>Make sure both files are served from the same origin.<br/><small>${esc(err.message)}</small></p>
+          </div>`;
+        return;
+      }
+
+      // ── Hero ──────────────────────────────
+      const hero = data.hero;
+      document.getElementById('hero-name').innerHTML = esc(hero.name).replace(/\n/g, '<br />');
+      document.getElementById('hero-title').textContent = hero.title;
+      document.getElementById('hero-tagline').textContent = hero.tagline;
+
+      const heroLinksEl = document.getElementById('hero-links');
+      heroLinksEl.innerHTML = hero.links.map(link => {
+        const attrs = link.external ? ' target="_blank" rel="noopener"' : '';
+        return `<a href="${esc(link.url)}"${attrs} class="link-underline hover:text-white transition-colors">${esc(link.label)} ↗</a>`;
+      }).join('');
+
+      // ── Updates ───────────────────────────
+      const updatesEl = document.getElementById('updates-list');
+      updatesEl.innerHTML = data.updates.map(u => {
+        const dotClass = u.active
+          ? 'bg-emerald-500 pulse-dot'
+          : 'bg-neutral-600';
+        return `
+          <div class="flex items-start gap-4">
+            <span class="mt-1.5 w-2 h-2 rounded-full ${dotClass} flex-shrink-0"></span>
+            <div>
+              <p class="text-white text-sm font-medium">${esc(u.title)}</p>
+              <p class="text-neutral-500 text-sm mt-0.5">${esc(u.subtitle)}</p>
+            </div>
+          </div>`;
+      }).join('');
+
+      // ── Projects ──────────────────────────
+      const projectsEl = document.getElementById('projects-grid');
+      projectsEl.innerHTML = data.projects.map(p => {
+        const tagsHtml = p.tags.map(t => {
+          if (t.color === 'green') {
+            return `<span class="text-xs bg-emerald-900/40 text-emerald-400 px-2.5 py-1 rounded-full">${esc(t.label)}</span>`;
+          }
+          return `<span class="text-xs bg-neutral-750 text-neutral-400 px-2.5 py-1 rounded-full">${esc(t.label)}</span>`;
+        }).join('');
+
+        return `
+          <div class="bg-neutral-850 border border-neutral-800 rounded-2xl p-6 card-hover">
+            <div class="flex items-center gap-2 mb-3">${tagsHtml}</div>
+            <h3 class="text-white text-base font-semibold leading-snug">${esc(p.title)}</h3>
+            <p class="text-neutral-500 text-sm mt-2 leading-relaxed">${esc(p.description)}</p>
+          </div>`;
+      }).join('');
+
+      // ── Leadership ────────────────────────
+      const leadershipEl = document.getElementById('leadership-grid');
+      leadershipEl.innerHTML = data.leadership.map(l => `
+        <div class="bg-neutral-850 border border-neutral-800 rounded-2xl overflow-hidden card-hover">
+          <div class="w-full aspect-[4/3] img-placeholder relative">
+            <img
+              src="${esc(l.image)}"
+              alt="${esc(l.imageAlt)}"
+              class="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-5">
+            <p class="text-xs text-neutral-500 tracking-wider uppercase mb-1.5">${esc(l.role)}</p>
+            <h3 class="text-white text-sm font-semibold leading-snug">${esc(l.title)}</h3>
+            <p class="text-neutral-500 text-xs mt-2 leading-relaxed">${esc(l.description)}</p>
+          </div>
+        </div>`).join('');
+
+      // ── Skills ────────────────────────────
+      const skillsEl = document.getElementById('skills-list');
+      skillsEl.innerHTML = data.skills.map((s, i) => {
+        const divider = i > 0 ? '<div class="border-t border-neutral-800"></div>' : '';
+        return `${divider}
+          <div>
+            <p class="text-neutral-500 text-xs tracking-wider uppercase mb-2">${esc(s.category)}</p>
+            <p class="text-white font-light">${esc(s.items)}</p>
+          </div>`;
+      }).join('');
+
+      // ── Footer ────────────────────────────
+      document.getElementById('footer-copyright').textContent = data.footer.copyright;
+
+      const footerLinksEl = document.getElementById('footer-links');
+      footerLinksEl.innerHTML = hero.links.map(link => {
+        const attrs = link.external ? ' target="_blank" rel="noopener"' : '';
+        return `<a href="${esc(link.url)}"${attrs} class="hover:text-white transition-colors">${esc(link.label)}</a>`;
+      }).join('');
+
+      // ── Re-attach scroll observer ─────────
+      initScrollObserver();
+    }
+
+    /**
+     * IntersectionObserver for fade-in on scroll.
+     */
+    function initScrollObserver() {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -40px 0px' }
+      );
+      document.querySelectorAll('.fade-section').forEach((el) => observer.observe(el));
+    }
+
+    // Boot
+    renderSite();
   </script>
 
 </body>
