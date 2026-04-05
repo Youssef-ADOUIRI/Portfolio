@@ -1,0 +1,100 @@
+{
+  "hero": {
+    "name": "Youssef Adouiri\nAlaoui",
+    "title": "Junior Data Scientist & Industrial Management Engineer",
+    "tagline": "Bridging Deep Learning, Supply Chain, and Strategy.",
+    "links": [
+      { "label": "LinkedIn", "url": "https://linkedin.com/in/youssef-adouiri/", "external": true },
+      { "label": "GitHub", "url": "https://github.com/Youssef-ADOUIRI", "external": true },
+      { "label": "Email", "url": "mailto:youssef.adouiri-alaoui@polytechnique.edu", "external": false }
+    ]
+  },
+
+  "updates": [
+    {
+      "title": "Incoming — Data Scientist Intern",
+      "subtitle": "Carrefour Analytics Factory · Starting Apr 2026",
+      "active": true
+    },
+    {
+      "title": "M2 Data Science",
+      "subtitle": "École Polytechnique (IP Paris)",
+      "active": false
+    },
+    {
+      "title": "M.Eng Industrial Management",
+      "subtitle": "EMINES — Université Mohammed VI Polytechnique",
+      "active": false
+    }
+  ],
+
+  "projects": [
+    {
+      "tags": [{ "label": "LLM", "color": "default" }],
+      "title": "Arabic Text Summarization",
+      "description": "Fine-tuned Qwen2.5 on Darija corpus using LoRA / PEFT. Improved ROUGE-L scores by 12%."
+    },
+    {
+      "tags": [
+        { "label": "Web App", "color": "default" },
+        { "label": "In Dev", "color": "green" }
+      ],
+      "title": "Aside App",
+      "description": "A minimalist to-do web application focused on fluid UX and seamless interaction."
+    },
+    {
+      "tags": [{ "label": "Full-Stack", "color": "default" }],
+      "title": "Sports Management Platform",
+      "description": "Django / React real-time ranking system for multi-sport disciplines."
+    },
+    {
+      "tags": [{ "label": "ML", "color": "default" }],
+      "title": "P&G Demand Forecasting",
+      "description": "XGBoost model for 900+ SKUs, achieving 87% accuracy (+15% vs manual)."
+    },
+    {
+      "tags": [{ "label": "Remote Sensing", "color": "default" }],
+      "title": "Satellite Water Quality",
+      "description": "Neural Networks on Sentinel-2 imagery to estimate water quality in Brazil (FUNCEME)."
+    },
+    {
+      "tags": [{ "label": "Operations Research", "color": "default" }],
+      "title": "Flood Risk Optimization",
+      "description": "Optimal barrier placement using OR methods. BCG Case Study."
+    }
+  ],
+
+  "leadership": [
+    {
+      "image": "https://placehold.co/600x450/1a1a1a/333333?text=NDS+Competition",
+      "imageAlt": "National Data Science Competition",
+      "role": "President",
+      "title": "National Data Science Competition",
+      "description": "Secured sponsorships and designed NLP challenges including Voice Anonymization."
+    },
+    {
+      "image": "https://placehold.co/600x450/1a1a1a/333333?text=Volleyball",
+      "imageAlt": "Volleyball Captain",
+      "role": "Captain",
+      "title": "Volleyball Team",
+      "description": "Led university team through rebuilding phase; former professional player."
+    },
+    {
+      "image": "https://placehold.co/600x450/1a1a1a/333333?text=Engineering+Games",
+      "imageAlt": "Engineering Games - Head of Sport",
+      "role": "Head of Sport",
+      "title": "Engineering Games",
+      "description": "Managed logistics for 400+ participants across multiple events."
+    }
+  ],
+
+  "skills": [
+    { "category": "Core", "items": "Python · SQL · C/C++ · R" },
+    { "category": "AI / ML", "items": "PyTorch · TensorFlow · LLMs (RAG, LangChain) · Scikit-Learn" },
+    { "category": "Web & Tools", "items": "React · Django · Git · Azure · Power BI · Docker" }
+  ],
+
+  "footer": {
+    "copyright": "© 2026 Youssef Adouiri Alaoui"
+  }
+}
